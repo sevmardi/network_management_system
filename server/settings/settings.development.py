@@ -10,14 +10,15 @@ EMAIL_PORT = 3306
 
 DATABASES = {
     "Default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "twoscoops",
-        "USER": "",
-        "PASSWORD": "",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "test",
+        "USER": "root",
+        "PASSWORD": "1234",
         "HOST": "localhost",
         "PORT": "",
     }
 }
+
 INSTALLED_APPS = ("debug_toolbar", )
 INTERNAL_IPS = ("127.0.0.1",)
 MIDDLEWARE_CLASSES = ("debug_toolbar.middleware.DebugToolbarMiddleware", )
